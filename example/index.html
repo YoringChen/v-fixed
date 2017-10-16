@@ -7,11 +7,19 @@
     <meta content="black" name="apple-mobile-web-app-status-bar-style">
     <meta content="telephone=no" name="format-detection">
     <title>测试</title>
+    <style>
+      .test-ele { background-color: #999;height:50px; }
+      .placeholder-ele { height:1000px;background-color: #666;color:#fff;font-size:32px;text-align: center;line-height: 500px }
+    </style>
   </head>
   <body>
     <div id="app">
-      <p v-fixed></p>
-      <p>{{ message }}</p>
+      <div class="test-ele" v-fixed>
+
+      </div>
+      <div class="placeholder-ele">
+        TEST
+      </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.4.4/dist/vue.min.js"></script>
   </body>
