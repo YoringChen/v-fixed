@@ -21,7 +21,6 @@ class PlaceHolder {
       this._customer_style[property] = this.ele.style[property]
     })
 
-
     return this
   }
 
@@ -33,6 +32,7 @@ class PlaceHolder {
 
   show() {
     this.ele.style.display = this._customer_style.display
+
     return this
   }
 

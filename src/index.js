@@ -18,7 +18,7 @@ const vFixed = {
         // set placeholder style with el width & height
         placeholder.setStyle({ ...style, width: `${rect.width}px`, height: `${rect.height}px` })
 
-        // if el is fixed, show placeholder, else hidden
+        // fixed to show placeholder or hidden it
         is_fixed ? placeholder.show() : placeholder.hidden()
 
         el._fd_placeholder = placeholder
