@@ -1,4 +1,4 @@
-import vFixed from '../src/index.js'
+import vFixed from '../src/fixed.js'
 
 const { Vue } = window
 
@@ -7,6 +7,7 @@ Vue.use(vFixed)
 new Vue({
   el: '#app',
   data: {
-    message: 'hello!'
+    message: 'hello!',
+    show_trigger: true
   }
 })

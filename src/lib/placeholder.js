@@ -20,19 +20,16 @@ class PlaceHolder {
       this.ele.style[property] = style[property] || this.ele.style[property]
       this._customer_style[property] = this.ele.style[property]
     })
-
     return this
   }
 
   hidden() {
     this.ele.style.display = 'none'
-
     return this
   }
 
   show() {
     this.ele.style.display = this._customer_style.display
-
     return this
   }
 
@@ -41,7 +38,6 @@ class PlaceHolder {
       this.ele.parentNode.removeChild(this.ele)
       this.ele = null
     }
-
     return this
   }
 }

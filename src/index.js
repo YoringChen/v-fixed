@@ -1,6 +1,9 @@
 import Fixed from './lib/fixed.js'
 import PlaceHolder from './lib/placeholder.js'
 import { window, scroll_top } from './lib/global.js'
+import Element from './element.js'
+
+console.log(Element)
 
 const vFixed = {
   install(Vue) {
@@ -21,11 +24,12 @@ const vFixed = {
         // fixed to show placeholder or hidden it
         is_fixed ? placeholder.show() : placeholder.hidden()
 
-        el._fd_placeholder = placeholder
+        vnode._fd_placeholder = placeholder
       },
-      unbind(el) {
-        el._fd_placeholder.destroy()
-        el._fixed.destroy()
+      unbind(el, binding, vnode) {
+        debugger
+        vnode._fd_placeholder.destroy()
+        vnode._fixed.destroy()
       },
     })
   }

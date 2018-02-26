@@ -24,6 +24,7 @@ module.exports = {
       'no-unused-expressions': 0,
       'guard-for-in': 0,
       'no-restricted-syntax': 0,
-      'no-shadow': 0
+      'no-shadow': 0,
+      'object-curly-newline': 0
     }
 };

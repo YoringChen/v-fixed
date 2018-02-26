@@ -45,7 +45,7 @@ class Fixed {
     }
 
     // throttle scroll handler 30ms
-    window.addEventListener('scroll', throttle(this.fixedHandler, 30))
+    window.addEventListener('scroll', throttle(this.fixedHandler, 10))
 
     return this
   }
