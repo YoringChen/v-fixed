@@ -27,7 +27,6 @@ class PlaceHolder {
   }
 
   hidden() {
-    // this.el.style.display = 'none'
     this.el.style.width = 0
     this.el.style.height = 0
     this.el.style.margin = 0
@@ -37,7 +36,6 @@ class PlaceHolder {
   }
 
   show() {
-    // this.el.style.display = this.style.display
     this.el.style.width = this.style.width
     this.el.style.height = this.style.height
     this.el.style.margin = this.style.margin
