@@ -1,4 +1,4 @@
-import vFixed from '../src/fixed.js'
+import vFixed from '../src/index.js'
 
 const { Vue } = window
 
