@@ -1,6 +1,12 @@
-import Say from '../src'
+import vFixed from '../src'
 
-const say = new Say()
+window.Vue.use(vFixed)
 
-/* eslint no-console: off */
-console.log(say.sayHelloWorld())
+/* eslint no-new: 'off' */
+new window.Vue({
+  el: '#app',
+  data: {
+    message: 'hello!',
+    show_trigger: true
+  }
+})

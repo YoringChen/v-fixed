@@ -4,7 +4,7 @@ const baseConfig = require('./webpack.base.conf')
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 const output = Config.library ? {
-  library: 'HelloWorld',
+  library: 'VFixed',
   libraryTarget: 'umd',
   libraryExport: 'default',
 } : {}

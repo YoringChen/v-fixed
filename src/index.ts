@@ -1,13 +1,17 @@
-class HelloWorld {
-  public msg: string
+import Element from './element'
+import { HTMLFixedElement } from '../types'
 
-  public constructor (msg?: string) {
-    this.msg = msg || 'hello world'
-  }
-
-  public sayHelloWorld (): string {
-    return this.msg
+const vFixed = {
+  install (Vue: any): void {
+    Vue.directive('fixed', {
+      inserted (el: HTMLFixedElement): void {
+        el._fixedElement = new Element(el)
+      },
+      unbind (el: HTMLFixedElement): void {
+        el._fixedElement.destroy()
+      }
+    })
   }
 }
 
-export default HelloWorld
+export default vFixed
