@@ -1,4 +1,4 @@
 interface Window {
-  TextCliper: any
+  VFixed: any
   Vue: any
 }
