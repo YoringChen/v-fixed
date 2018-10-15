@@ -38,7 +38,7 @@ class Element {
   isFixed() {
     const { placeholder, style } = this
 
-    return placeholder.el.getBoundingClientRect().top + parseFloat(style.marginTop) <= 0
+    return placeholder.el.getBoundingClientRect().top + (parseFloat(style.marginTop) || 0) <= 0
   }
 
   bindScrollHandler() {
